@@ -23,6 +23,7 @@ import sys
 from datetime import datetime
 import time
 import instaloader
+from colorama import Fore, Back, Style, init
 
 
 os.system("title Code Hub Community")
@@ -193,6 +194,17 @@ def proxyReset():
     os.system('netsh winhttp reset')
     print("Proxy Adresiniz Yenilendi")
 
+def iptracker():
+    print(Fore.BLUE +  "  [+] ----------------GLOBAL TOOL----------------------[+]")
+    os.system("screenfetch")
+    print(Fore.BLUE +  "  [+] ----------------GLOBAL TOOL----------------------[+]")
+    time.sleep(5) 
+    os.system("cls")
+    print(Fore.BLUE +  "  [+] ----------------GLOBAL TOOL----------------------[+]")
+    target= input(Fore.GREEN + "[+]Target -> : ")
+    os.system("curl http://ip-api.com/" +target)
+    print(Fore.GREEN + "[+]İp :  " + target )
+    print("[+]succes ip trace ")
 
 #-_-_-_-_-_-_İFELİFELSE_-_-_-_-_-_-_#
 
@@ -214,17 +226,18 @@ while True:
     time.sleep(3)
     print("""
 
- >1  Port Scanner
- >2  Net Ping Clear
- >3  Net Password Show
- >4  Instagram User İnfo
- >5  Password Creativ
- >6  Web IP Adresi
- >7  Win10 Logo
- >8  QR Code Creativ
- >9  Instagram PP download
+ >01  Port Scanner
+ >02  Net Ping Clear
+ >03  Net Password Show
+ >04  Instagram User İnfo
+ >05  Password Creativ
+ >06  Web IP Adresi
+ >07  Win10 Logo
+ >08  QR Code Creativ
+ >09  Instagram PP download
  >10 DNS Reset
  >11 Proxy Reset
+ >12 IP Tracker
  >q  Exit
  >y  Communication
 
@@ -295,6 +308,12 @@ while True:
         proxyReset()
         print("wait 5 seconds")
         time.sleep(5)
+        os.system("cls")
+        continue
+    elif secim == "12":
+        iptracker()
+        print("wait 10 seconds")
+        time.sleep(10)
         os.system("cls")
         continue
     elif secim == "y":
