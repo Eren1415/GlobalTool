@@ -245,13 +245,13 @@ while True:
 
 """)
     secim = input("Seçiminizi giriniz: ")
-    if secim == "1":
+    if secim == "01":
         port_scanner()
         print("wait 10 seconds")
         time.sleep(10)
         os.system("cls")
         continue
-    elif secim == "2":
+    elif secim == "02":
         net_ping_clear()
         print("wait 10 seconds")
         time.sleep(10)
@@ -263,37 +263,37 @@ while True:
         time.sleep(10)
         os.system("cls")
         continue
-    elif secim == "4":
+    elif secim == "04":
         insta_veri()
         print("wait 10 seconds")
         time.sleep(10)
         os.system("cls")
         continue
-    elif secim == "5":
+    elif secim == "05":
         pass_creative()
         print("wait 10 seconds")
         time.sleep(10)
         os.system("cls")
         continue
-    elif secim == "6":
+    elif secim == "06":
         web_ip()
         print("wait 10 seconds")
         time.sleep(10)
         os.system("cls")
         continue
-    elif secim == "7":
+    elif secim == "07":
         win10logo()
         print("wait 10 seconds")
         time.sleep(10)
         os.system("cls")
         continue
-    elif secim == "8":
+    elif secim == "08":
         qrcodecreative()
         print("wait 10 seconds")
         time.sleep(10)
         os.system("cls")
         continue
-    elif secim == "9":
+    elif secim == "09":
         instaloder2()
         print("wait 10 seconds")
         time.sleep(10)
